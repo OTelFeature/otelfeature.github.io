@@ -24,8 +24,6 @@
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
   {% if site.plausible_domain %}
   <script defer data-domain="{{ site.plausible_domain }}" src="https://plausible.io/js/script.outbound-links.js"></script>
-  {% elsif site.goatcounter_code %}
-  <script data-goatcounter="https://{{ site.goatcounter_code }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
   {% endif %}
 </head>
 <body>
@@ -33,5 +31,17 @@
     {{ content }}
   </main>
   <footer></footer>
+  {% if site.goatcounter_code and site.plausible_domain == nil %}
+  <script>
+    // Count clicks on outbound links (Flagsmith, Dash0, GitHub, ...) as GoatCounter events.
+    document.querySelectorAll('a[href^="http"]').forEach(function (a) {
+      if (a.host === location.host) return;
+      var where = new URL(a.href).searchParams.get('utm_content');
+      a.dataset.goatcounterClick = 'out: ' + a.host + a.pathname + (where ? ' (' + where + ')' : '');
+      a.dataset.goatcounterTitle = a.textContent.trim() || a.querySelector('img')?.alt || a.host;
+    });
+  </script>
+  <script data-goatcounter="https://{{ site.goatcounter_code }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  {% endif %}
 </body>
 </html>

@@ -13,4 +13,4 @@ recording_url:         # once the recording is out; replaces the CNCF YouTube po
 session_url:           # the session's page on the event schedule, for feedback
 # Cookie-less analytics, no consent banner needed. Set one of them.
 plausible_domain:      # e.g. otelfeature.dev
-goatcounter_code:      # e.g. otelfeature → otelfeature.goatcounter.com
+goatcounter_code: otelfeature  # https://otelfeature.goatcounter.com
