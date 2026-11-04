@@ -1,4 +1,5 @@
 title: OTelFeature
+talk_title: OpenFeature as a Control Plane for OpenTelemetry
 description: Controlling OpenTelemetry instrumentation at runtime with OpenFeature.
 url: https://otelfeature.github.io
 baseurl: /presentation

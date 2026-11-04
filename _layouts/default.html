@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ site.title }}</title>
+  <title>{{ site.talk_title }} · KubeCon NA 2026</title>
   <meta name="description" content="{{ site.description }}">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
@@ -12,13 +12,13 @@
   <!-- Link previews on LinkedIn, Slack, Bluesky and X -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="{{ site.title }}">
-  <meta property="og:title" content="OTelFeature – KubeCon NA 2026">
+  <meta property="og:title" content="{{ site.talk_title }} · KubeCon NA 2026">
   <meta property="og:description" content="Code, demo and speakers from the Flagsmith × Dash0 talk: controlling OpenTelemetry instrumentation at runtime with OpenFeature.">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:image" content="{{ '/assets/og.png' | absolute_url }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="OTelFeature, a talk by Flagsmith and Dash0 at KubeCon + CloudNativeCon North America 2026">
+  <meta property="og:image:alt" content="{{ site.talk_title }}, a talk by Flagsmith and Dash0 at KubeCon + CloudNativeCon North America 2026">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">

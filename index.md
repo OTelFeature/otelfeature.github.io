@@ -8,7 +8,7 @@ layout: default
 KubeCon + CloudNativeCon North America 2026
 {: .event}
 
-# OTelFeature
+# {{ site.talk_title }}
 
 Controlling OpenTelemetry instrumentation at runtime with OpenFeature.
 
@@ -75,6 +75,8 @@ Dash0 · OpenTelemetry Demo maintainer
 </div>
 
 ## The code
+
+The project behind the talk is called **OTelFeature**:
 
 - [poc](https://github.com/OTelFeature/poc) — the demo from the talk
 - [otelfeature-instrument](https://github.com/OTelFeature/otelfeature-instrument) — zero-code OpenTelemetry launcher with flagd-controlled span suppression
