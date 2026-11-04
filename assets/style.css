@@ -53,6 +53,9 @@ main {
 .hero .partners a { opacity: 0.9; }
 .hero .partners a:hover { opacity: 1; }
 
+.hero .mark { margin: 0 0 16px; }
+.hero .mark img { display: block; height: 44px; width: auto; }
+
 .hero .event {
   margin: 0 0 8px;
   color: var(--yellow);
