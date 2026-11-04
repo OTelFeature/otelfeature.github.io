@@ -26,11 +26,13 @@ Controlling OpenTelemetry instrumentation at runtime with OpenFeature.
 
 </div>
 
-{% if site.dash0_booth %}
-## Find us at KubeCon
+## Talk to us
 
-Want to see the demo with your own stack, or argue about the open questions? Come by the Dash0 booth: **{{ site.dash0_booth }}**.
-{% endif %}
+Questions we didn't get to, want to try this in your own setup, or have opinions on the open questions? Reach out:
+
+- [Open an issue on the poc repo](https://github.com/OTelFeature/poc/issues/new)
+- Find us on the [CNCF Slack](https://slack.cncf.io) in `#openfeature` and `#opentelemetry`
+- Through our websites: [Simon](https://schrottner.at) and [Juliano](https://jcosta.dev)
 
 ## About the talk
 

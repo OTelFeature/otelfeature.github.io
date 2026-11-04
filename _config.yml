@@ -10,7 +10,6 @@ exclude:
 slides_url:            # the slide deck, ungated
 recording_url:         # once the recording is out; replaces the CNCF YouTube pointer
 session_url:           # the session's page on the event schedule, for feedback
-dash0_booth:           # e.g. "Booth S12" (Flagsmith has no booth)
 # Cookie-less analytics, no consent banner needed. Set one of them.
 plausible_domain:      # e.g. otelfeature.github.io
 goatcounter_code:      # e.g. otelfeature → otelfeature.goatcounter.com
