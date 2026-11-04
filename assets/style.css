@@ -41,6 +41,18 @@ main {
 
 .hero .button { text-shadow: none; }
 
+.hero .partners {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0 24px;
+  color: var(--sky);
+}
+
+.hero .partners img { display: block; height: 22px; width: auto; }
+.hero .partners a { opacity: 0.9; }
+.hero .partners a:hover { opacity: 1; }
+
 .hero .event {
   margin: 0 0 8px;
   color: var(--yellow);
