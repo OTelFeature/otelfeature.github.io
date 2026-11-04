@@ -89,23 +89,70 @@ li { margin: 4px 0; }
 .person h3 { margin-top: 12px; }
 .person h3 + p { color: var(--muted); margin: 0 0 12px; font-size: 0.95rem; }
 
-.person h4 {
-  margin: 20px 0 4px;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--magenta);
-}
+.company { margin: 24px 0 8px; }
+.company img { width: auto; height: 28px; border: 0; border-radius: 0; }
 
-.person ul {
+/* Icon-only links; the link text stays for screen readers. The icon is picked from the URL. */
+.social {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 4px 16px;
+  gap: 10px;
 }
+
+.social a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--blue);
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  position: relative;
+}
+
+.social a:hover { background: var(--magenta); }
+
+.social a::before {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  background: #ffffff;
+  -webkit-mask: var(--icon) center / contain no-repeat;
+  mask: var(--icon) center / contain no-repeat;
+}
+
+.social a[href*="github.com"] { --icon: url("icons/github.svg"); }
+.social a[href*="linkedin.com"] { --icon: url("icons/linkedin.svg"); }
+.social a[href*="bsky.app"] { --icon: url("icons/bluesky.svg"); }
+
+.tech {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.tech li { margin: 0; }
+
+.tech a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: var(--sky);
+  color: var(--navy);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.tech a:hover { outline: 2px solid var(--magenta); color: var(--navy); }
+.tech img { width: 36px; height: 36px; object-fit: contain; }
 
 footer {
   height: 88px;

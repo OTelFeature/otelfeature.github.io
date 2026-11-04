@@ -36,11 +36,13 @@ Flagsmith · OpenFeature Technical Committee
 - [GitHub](https://github.com/aepfli)
 - [LinkedIn](https://www.linkedin.com/in/TODO)
 - [Bluesky](https://bsky.app/profile/TODO)
+{: .social}
 
-#### Flagsmith
+[![Flagsmith](assets/logos/flagsmith.svg)](https://www.flagsmith.com)
+{: .company}
 
-- [Website](https://www.flagsmith.com)
 - [GitHub](https://github.com/Flagsmith/flagsmith)
+{: .social}
 
 </div>
 
@@ -55,10 +57,10 @@ Dash0
 - [GitHub](https://github.com/julianocosta89)
 - [LinkedIn](https://www.linkedin.com/in/TODO)
 - [Bluesky](https://bsky.app/profile/TODO)
+{: .social}
 
-#### Dash0
-
-- [Website](https://www.dash0.com)
+[![Dash0](assets/logos/dash0.svg)](https://www.dash0.com)
+{: .company}
 
 </div>
 
@@ -66,6 +68,7 @@ Dash0
 
 ## Learn more
 
-- [OpenFeature](https://openfeature.dev)
-- [flagd](https://flagd.dev)
-- [OpenTelemetry](https://opentelemetry.io)
+- [![](assets/logos/openfeature.svg) OpenFeature](https://openfeature.dev)
+- [![](assets/logos/flagd.svg) flagd](https://flagd.dev)
+- [![](assets/logos/opentelemetry.svg) OpenTelemetry](https://opentelemetry.io)
+{: .tech}
