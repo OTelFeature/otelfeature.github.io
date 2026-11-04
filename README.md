@@ -1,6 +1,6 @@
 # OTelFeature presentation
 
-Landing page for the talk, linked from the slides by QR code: <https://otelfeature.github.io/presentation/>
+Landing page for the talk, linked from the slides by QR code: <https://otelfeature.dev/>
 
 Edit [`index.md`](index.md); GitHub Pages builds it with Jekyll on every push to `main`. Photos go in `assets/` and replace the GitHub avatar URLs in `index.md`.
 

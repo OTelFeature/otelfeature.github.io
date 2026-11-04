@@ -1,8 +1,8 @@
 title: OTelFeature
 talk_title: OpenFeature as a Control Plane for OpenTelemetry
 description: Controlling OpenTelemetry instrumentation at runtime with OpenFeature.
-url: https://otelfeature.github.io
-baseurl: /presentation
+url: https://otelfeature.dev
+baseurl: ""
 markdown: kramdown
 exclude:
   - README.md
@@ -12,5 +12,5 @@ slides_url:            # the slide deck, ungated
 recording_url:         # once the recording is out; replaces the CNCF YouTube pointer
 session_url:           # the session's page on the event schedule, for feedback
 # Cookie-less analytics, no consent banner needed. Set one of them.
-plausible_domain:      # e.g. otelfeature.github.io
+plausible_domain:      # e.g. otelfeature.dev
 goatcounter_code:      # e.g. otelfeature → otelfeature.goatcounter.com
