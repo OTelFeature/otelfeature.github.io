@@ -1,5 +1,5 @@
 title: OTelFeature
-description: Controlling OpenTelemetry instrumentation at runtime with OpenFeature and flagd.
+description: Controlling OpenTelemetry instrumentation at runtime with OpenFeature.
 url: https://otelfeature.github.io
 baseurl: /presentation
 markdown: kramdown
@@ -9,6 +9,7 @@ exclude:
 # Optional blocks. Each one stays hidden while its value is empty.
 slides_url:            # the slide deck, ungated
 recording_signup_url:  # opt-in form that sends the recording (consent per company)
+recording_url:         # once the recording is out; replaces the sign-up callout
 session_url:           # the session's page on the event schedule, for feedback
 booths:
   flagsmith:           # e.g. "Booth S12"

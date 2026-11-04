@@ -10,19 +10,26 @@ KubeCon + CloudNativeCon North America 2026
 
 # OTelFeature
 
-Controlling OpenTelemetry instrumentation at runtime with OpenFeature and flagd.
+Controlling OpenTelemetry instrumentation at runtime with OpenFeature.
 
 [![Flagsmith](assets/logos/flagsmith-white.svg)](https://www.flagsmith.com/?{{ utm }}&utm_content=hero) × [![Dash0](assets/logos/dash0-white.svg)](https://www.dash0.com/?{{ utm }}&utm_content=hero)
 {: .partners}
 
 {% if site.slides_url %}[Get the slides]({{ site.slides_url }}){: .button} {% endif %}[Try the PoC on GitHub](https://github.com/OTelFeature/poc){: .button{% if site.slides_url %} .secondary{% endif %}}
+{: .actions}
 
 </div>
 
-{% if site.recording_signup_url %}
+{% if site.recording_url %}
 <div class="callout" markdown="1">
 
-**The recording isn't out yet.** [Get an email when it is]({{ site.recording_signup_url }}), together with the slides and the follow-ups from Q&A.
+**Missed a part?** [Watch the recording]({{ site.recording_url }}).
+
+</div>
+{% elsif site.recording_signup_url %}
+<div class="callout" markdown="1">
+
+**The recording isn't out yet.** [Get an email when it is]({{ site.recording_signup_url }}), together with {% unless site.slides_url %}the slides and {% endunless %}the follow-ups from Q&A.
 
 </div>
 {% endif %}
@@ -37,6 +44,12 @@ Want to see the demo with your own stack, or argue about the open questions? Com
 {% endif %}
 {% endif %}
 
+## About the talk
+
+Observability is usually configured up front: too much telemetry while everything is healthy, too little once an incident starts. This talk uses OpenFeature flags to control OpenTelemetry instrumentation at runtime, so a service moves from lightweight tracing to detailed diagnostics without a redeploy.
+
+The demo turns tracing off with one flag, drops INTERNAL spans while keeping the I/O edges, and targets by OpenTelemetry semantic conventions used as evaluation context, down to sampling that follows the error rate. The question we leave you with: should semantic conventions become the vendor-neutral control surface for this?
+
 ## Speakers
 
 <div class="people" markdown="1">
@@ -47,11 +60,9 @@ Want to see the demo with your own stack, or argue about the open questions? Com
 
 ### Simon Schrottner
 
-[![Flagsmith](assets/logos/flagsmith.svg)](https://www.flagsmith.com/?{{ utm }}&utm_content=speaker)
-{: .company}
+Flagsmith · OpenFeature Technical Committee
 
-OpenFeature Technical Committee
-
+- [Website](https://schrottner.at)
 - [GitHub](https://github.com/aepfli)
 {: .social}
 
@@ -63,39 +74,11 @@ OpenFeature Technical Committee
 
 ### Juliano Costa
 
-[![Dash0](assets/logos/dash0.svg)](https://www.dash0.com/?{{ utm }}&utm_content=speaker)
-{: .company}
+Dash0
 
+- [Website](https://jcosta.dev)
 - [GitHub](https://github.com/julianocosta89)
 {: .social}
-
-</div>
-
-</div>
-
-## Take it further
-
-<div class="offers" markdown="1">
-
-<div class="offer" markdown="1">
-
-[![Flagsmith](assets/logos/flagsmith.svg)](https://www.flagsmith.com/?{{ utm }}&utm_content=offer)
-{: .company}
-
-Open-source feature flags with OpenFeature providers for Java, Python, Go and more. Manage flags like the ones in this talk from a dashboard, with segments for targeting.
-
-[Start free](https://app.flagsmith.com/signup?{{ utm }}&utm_content=offer){: .button} [OpenFeature docs](https://docs.flagsmith.com/integrating-with-flagsmith/openfeature?{{ utm }}&utm_content=offer)
-
-</div>
-
-<div class="offer" markdown="1">
-
-[![Dash0](assets/logos/dash0.svg)](https://www.dash0.com/?{{ utm }}&utm_content=offer)
-{: .company}
-
-OpenTelemetry-native observability. See what your flags did to your traces: fewer spans, the same answers.
-
-[Start free trial](https://www.dash0.com/sign-up?{{ utm }}&utm_content=offer){: .button} [Book a demo](https://www.dash0.com/book-a-demo?{{ utm }}&utm_content=offer)
 
 </div>
 
@@ -108,6 +91,34 @@ OpenTelemetry-native observability. See what your flags did to your traces: fewe
 - [otelfeature-java-extension](https://github.com/OTelFeature/otelfeature-java-extension) — the Java agent counterpart
 
 Found it useful? A star on the repos tells us to keep going.
+
+## Take it further
+
+<div class="offers" markdown="1">
+
+<div class="offer" markdown="1">
+
+[![Flagsmith](assets/logos/flagsmith.svg)](https://www.flagsmith.com/?{{ utm }}&utm_content=offer)
+{: .company}
+
+Open-source feature flag service with OpenFeature providers for Java, Python, Go and more, a dashboard and segments for targeting.
+
+[Start free](https://app.flagsmith.com/signup/?{{ utm }}&utm_content=offer){: .button} [OpenFeature docs](https://docs.flagsmith.com/integrating-with-flagsmith/openfeature?{{ utm }}&utm_content=offer)
+
+</div>
+
+<div class="offer" markdown="1">
+
+[![Dash0](assets/logos/dash0.svg)](https://www.dash0.com/?{{ utm }}&utm_content=offer)
+{: .company}
+
+OpenTelemetry-native observability. See the effect of your flags on your traces.
+
+[Start free trial](https://www.dash0.com/sign-up?{{ utm }}&utm_content=offer){: .button} [Book a demo](https://www.dash0.com/book-a-demo?{{ utm }}&utm_content=offer)
+
+</div>
+
+</div>
 
 ## Learn more
 
