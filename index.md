@@ -5,7 +5,7 @@ layout: default
 
 <div class="hero" markdown="1">
 
-![OTelFeature](assets/logo.png)
+![OTelFeature](assets/logo-white.svg)
 {: .mark}
 
 KubeCon + CloudNativeCon North America 2026
