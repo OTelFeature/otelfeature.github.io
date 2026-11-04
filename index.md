@@ -31,17 +31,14 @@ Controlling OpenTelemetry instrumentation at runtime with OpenFeature and flagd.
 
 ### Simon Schrottner
 
-Flagsmith · OpenFeature Technical Committee
+[![Flagsmith](assets/logos/flagsmith.svg)](https://www.flagsmith.com)
+{: .company}
+
+OpenFeature Technical Committee
 
 - [GitHub](https://github.com/aepfli)
 - [LinkedIn](https://www.linkedin.com/in/TODO)
 - [Bluesky](https://bsky.app/profile/TODO)
-{: .social}
-
-[![Flagsmith](assets/logos/flagsmith.svg)](https://www.flagsmith.com)
-{: .company}
-
-- [GitHub](https://github.com/Flagsmith/flagsmith)
 {: .social}
 
 </div>
@@ -52,15 +49,13 @@ Flagsmith · OpenFeature Technical Committee
 
 ### Juliano Costa
 
-Dash0
+[![Dash0](assets/logos/dash0.svg)](https://www.dash0.com)
+{: .company}
 
 - [GitHub](https://github.com/julianocosta89)
 - [LinkedIn](https://www.linkedin.com/in/TODO)
 - [Bluesky](https://bsky.app/profile/TODO)
 {: .social}
-
-[![Dash0](assets/logos/dash0.svg)](https://www.dash0.com)
-{: .company}
 
 </div>
 
@@ -71,4 +66,6 @@ Dash0
 - [![](assets/logos/openfeature.svg) OpenFeature](https://openfeature.dev)
 - [![](assets/logos/flagd.svg) flagd](https://flagd.dev)
 - [![](assets/logos/opentelemetry.svg) OpenTelemetry](https://opentelemetry.io)
+- [![](assets/logos/flagsmith-icon.svg) Flagsmith](https://www.flagsmith.com)
+- [![](assets/logos/dash0-icon.svg) Dash0](https://www.dash0.com)
 {: .tech}
