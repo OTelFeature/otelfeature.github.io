@@ -2,11 +2,18 @@
 layout: default
 ---
 
+<div class="hero" markdown="1">
+
+KubeCon + CloudNativeCon North America 2026
+{: .event}
+
 # OTelFeature
 
 Controlling OpenTelemetry instrumentation at runtime with OpenFeature and flagd.
 
 [Try the PoC on GitHub](https://github.com/OTelFeature/poc){: .button}
+
+</div>
 
 ## The code
 

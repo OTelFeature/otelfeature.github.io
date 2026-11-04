@@ -1,44 +1,54 @@
+/* Colours from the KubeCon + CloudNativeCon North America 2026 speaker template. */
 :root {
-  --bg: #ffffff;
-  --fg: #1c1f24;
-  --muted: #5b6270;
-  --card: #f4f5f7;
-  --accent: #4f46e5;
-  --accent-fg: #ffffff;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #111318;
-    --fg: #e8eaed;
-    --muted: #9aa0ab;
-    --card: #1c1f26;
-    --accent: #818cf8;
-    --accent-fg: #111318;
-  }
+  color-scheme: light;
+  --blue: #113e82;
+  --navy: #052243;
+  --magenta: #d62293;
+  --yellow: #ffee88;
+  --sky: #e3f6ff;
+  --muted: #4a5d78;
 }
 
 * { box-sizing: border-box; }
 
 body {
   margin: 0;
-  background: var(--bg);
-  color: var(--fg);
-  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  overflow-x: clip;
+  background: #ffffff;
+  color: var(--navy);
+  font: 17px/1.6 Arial, Helvetica, sans-serif;
 }
 
 main {
   max-width: 720px;
   margin: 0 auto;
-  padding: 48px 16px 64px;
+  padding: 0 16px 48px;
 }
 
-h1 { font-size: 2.4rem; margin: 0 0 8px; line-height: 1.15; }
-h1 + p { color: var(--muted); font-size: 1.15rem; margin-top: 0; }
-h2 { margin-top: 48px; font-size: 1.4rem; }
+/* Full-bleed blue title block with the template's mountain banner along its bottom edge. */
+.hero {
+  margin: 0 calc(50% - 50vw);
+  padding: 48px max(16px, calc(50vw - 344px)) calc(min(100vw, 1200px) * 0.2663 + 8px);
+  background: url("kubecon/banner.png") center bottom / min(100vw, 1200px) auto no-repeat, var(--blue);
+  color: #ffffff;
+}
+
+.hero .event {
+  margin: 0 0 8px;
+  color: var(--yellow);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+h1 { font-size: 2.6rem; margin: 0 0 8px; line-height: 1.15; }
+.hero h1 + p { color: var(--sky); font-size: 1.15rem; margin-top: 0; }
+h2 { margin-top: 48px; font-size: 1.5rem; color: var(--magenta); }
 h3 { margin: 24px 0 4px; font-size: 1.1rem; }
 
-a { color: var(--accent); }
+a { color: var(--blue); }
+a:hover { color: var(--magenta); }
 
 ul { padding-left: 20px; }
 li { margin: 4px 0; }
@@ -47,11 +57,13 @@ li { margin: 4px 0; }
   display: inline-block;
   padding: 12px 22px;
   border-radius: 10px;
-  background: var(--accent);
-  color: var(--accent-fg);
-  font-weight: 600;
+  background: var(--yellow);
+  color: var(--navy);
+  font-weight: 700;
   text-decoration: none;
 }
+
+.button:hover { background: #ffffff; color: var(--navy); }
 
 .people {
   display: grid;
@@ -60,7 +72,7 @@ li { margin: 4px 0; }
 }
 
 .person {
-  background: var(--card);
+  background: var(--sky);
   border-radius: 14px;
   padding: 24px;
   text-align: center;
@@ -71,6 +83,7 @@ li { margin: 4px 0; }
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
+  border: 4px solid var(--yellow);
 }
 
 .person h3 { margin-top: 12px; }
@@ -81,7 +94,7 @@ li { margin: 4px 0; }
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--muted);
+  color: var(--magenta);
 }
 
 .person ul {
@@ -92,4 +105,9 @@ li { margin: 4px 0; }
   justify-content: center;
   flex-wrap: wrap;
   gap: 4px 16px;
+}
+
+footer {
+  height: 88px;
+  background: url("kubecon/hex.png") left top / auto 88px repeat-x;
 }
