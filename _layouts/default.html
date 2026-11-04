@@ -5,7 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ site.title }}</title>
   <meta name="description" content="{{ site.description }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+
+  <!-- Link previews on LinkedIn, Slack, Bluesky and X -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ site.title }}: {{ site.description }}">
+  <meta property="og:description" content="The talk by Flagsmith and Dash0 at KubeCon + CloudNativeCon North America 2026: slides, code and how to reach us.">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/assets/kubecon/banner.png' | absolute_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  {% if site.plausible_domain %}
+  <script defer data-domain="{{ site.plausible_domain }}" src="https://plausible.io/js/script.outbound-links.js"></script>
+  {% elsif site.goatcounter_code %}
+  <script data-goatcounter="https://{{ site.goatcounter_code }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  {% endif %}
 </head>
 <body>
   <main>
