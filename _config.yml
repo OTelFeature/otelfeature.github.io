@@ -8,12 +8,9 @@ exclude:
 
 # Optional blocks. Each one stays hidden while its value is empty.
 slides_url:            # the slide deck, ungated
-recording_signup_url:  # opt-in form that sends the recording (consent per company)
-recording_url:         # once the recording is out; replaces the sign-up callout
+recording_url:         # once the recording is out; replaces the CNCF YouTube pointer
 session_url:           # the session's page on the event schedule, for feedback
-booths:
-  flagsmith:           # e.g. "Booth S12"
-  dash0:
+dash0_booth:           # e.g. "Booth S12" (Flagsmith has no booth)
 # Cookie-less analytics, no consent banner needed. Set one of them.
 plausible_domain:      # e.g. otelfeature.github.io
 goatcounter_code:      # e.g. otelfeature → otelfeature.goatcounter.com

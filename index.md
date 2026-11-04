@@ -20,28 +20,16 @@ Controlling OpenTelemetry instrumentation at runtime with OpenFeature.
 
 </div>
 
-{% if site.recording_url %}
 <div class="callout" markdown="1">
 
-**Missed a part?** [Watch the recording]({{ site.recording_url }}).
+{% if site.recording_url %}**Missed a part?** [Watch the recording]({{ site.recording_url }}).{% else %}**Missed a part?** KubeCon recordings go up on the [CNCF YouTube channel](https://www.youtube.com/@cncf) a few weeks after the event.{% endif %}
 
 </div>
-{% elsif site.recording_signup_url %}
-<div class="callout" markdown="1">
 
-**The recording isn't out yet.** [Get an email when it is]({{ site.recording_signup_url }}), together with {% unless site.slides_url %}the slides and {% endunless %}the follow-ups from Q&A.
-
-</div>
-{% endif %}
-
-{% if site.booths.flagsmith or site.booths.dash0 %}
+{% if site.dash0_booth %}
 ## Find us at KubeCon
 
-Want to see the demo with your own stack, or argue about the open questions? Come by:
-
-{% if site.booths.flagsmith %}- **Flagsmith**: {{ site.booths.flagsmith }}
-{% endif %}{% if site.booths.dash0 %}- **Dash0**: {{ site.booths.dash0 }}
-{% endif %}
+Want to see the demo with your own stack, or argue about the open questions? Come by the Dash0 booth: **{{ site.dash0_booth }}**.
 {% endif %}
 
 ## About the talk
@@ -74,7 +62,7 @@ Flagsmith · OpenFeature Technical Committee
 
 ### Juliano Costa
 
-Dash0
+Dash0 · OpenTelemetry Demo maintainer
 
 - [Website](https://jcosta.dev)
 - [GitHub](https://github.com/julianocosta89)
